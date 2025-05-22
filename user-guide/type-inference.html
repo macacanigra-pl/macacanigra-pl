@@ -12,13 +12,13 @@
         <meta name="author" content="MNL">
       
       
-        <link rel="canonical" href="https://macacanigra-pl.github.io/macacanigra-pl/user-guide/compiler.html">
+        <link rel="canonical" href="https://macacanigra-pl.github.io/macacanigra-pl/user-guide/type-inference.html">
       
       
-        <link rel="prev" href="type-suggestion.html">
+        <link rel="prev" href="getting-started.html">
       
       
-        <link rel="next" href="program-visualization.html">
+        <link rel="next" href="type-suggestion.html">
       
       
       <link rel="icon" href="../assets/images/mnl_logo_1.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Compiler - Macaca Nigra Programming Language</title>
+        <title>Type Inference - Macaca Nigra Programming Language</title>
       
     
     
@@ -139,11 +139,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Compiler - Macaca Nigra Programming Language" >
+        <meta  property="og:title"  content="Type Inference - Macaca Nigra Programming Language" >
       
         <meta  property="og:description"  content="MNL is a Block-based Functional Programming Language" >
       
-        <meta  property="og:image"  content="https://macacanigra-pl.github.io/macacanigra-pl/assets/images/social/user-guide/compiler.png" >
+        <meta  property="og:image"  content="https://macacanigra-pl.github.io/macacanigra-pl/assets/images/social/user-guide/type-inference.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -151,15 +151,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://macacanigra-pl.github.io/macacanigra-pl/user-guide/compiler.html" >
+        <meta  property="og:url"  content="https://macacanigra-pl.github.io/macacanigra-pl/user-guide/type-inference.html" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Compiler - Macaca Nigra Programming Language" >
+        <meta  name="twitter:title"  content="Type Inference - Macaca Nigra Programming Language" >
       
         <meta  name="twitter:description"  content="MNL is a Block-based Functional Programming Language" >
       
-        <meta  name="twitter:image"  content="https://macacanigra-pl.github.io/macacanigra-pl/assets/images/social/user-guide/compiler.png" >
+        <meta  name="twitter:image"  content="https://macacanigra-pl.github.io/macacanigra-pl/assets/images/social/user-guide/type-inference.png" >
       
     
     
@@ -182,7 +182,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-compiler" class="md-skip">
+        <a href="#type-inference" class="md-skip">
           Skip to content
         </a>
       
@@ -217,7 +217,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Compiler
+              Type Inference
             
           </span>
         </div>
@@ -558,10 +558,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="type-inference.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="type-inference.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -572,6 +581,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -604,32 +614,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Compiler
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="compiler.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="compiler.html" class="md-nav__link">
         
   
   
@@ -640,35 +628,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#example-the-identity-function" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example: The Identity Function
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -883,23 +842,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#example-the-identity-function" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example: The Identity Function
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -914,35 +856,33 @@
 
 
 
-<h1 id="the-compiler">The Compiler<a class="headerlink" href="#the-compiler" title="Permanent link">&para;</a></h1>
-<p>MNL has a compiler named YAKI (Yet Another [K/C]Compiler Interface). It transforms block-based programming languages into text-based languages such as SML and Scala. Beyond compiling, YAKI could write a typing derivation of MNL.</p>
-<p>Users can access YAKI by right-clicking on the workspace and choosing <code>Compiler</code> to open the transpiler window. The combo box at the bottom allows users to select the target language.</p>
-<h2 id="example-the-identity-function">Example: The Identity Function<a class="headerlink" href="#example-the-identity-function" title="Permanent link">&para;</a></h2>
-<details class="note">
-<summary>The Identity Function</summary>
-<p><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> The identity function is a function that returns the input value.</p>
-</details>
+<h1 id="type-inference">Type Inference<a class="headerlink" href="#type-inference" title="Permanent link">&para;</a></h1>
+<p>The term type of the variable block (Fig. 1) and operator block (Fig. 2) depends on the attached block. If the block is incomplete, its default term type is <code>any</code>.</p>
 <figure>
-<p><img alt="transpiler-block" src="assets/images/transpiler_block_source.png" title="the identity function" /></p>
+<p><img alt="type-suggestion" src="assets/images/inferr_var_empty.png" title="The variable type is any " /></p>
 <figcaption>
-<p>Fig. 1: The identity function</p>
+<p>Fig. 1: The variable block term type is <code>any</code></p>
 </figcaption>
 </figure>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Typing Derivation</label><label for="__tabbed_1_2">SML</label><label for="__tabbed_1_3">Scala</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><img alt="sum-list" src="assets/images/typing_derivation.png" /></p>
-</div>
-<div class="tabbed-block">
-<div class="language-sml highlight"><span class="filename">identity_function.sml</span><pre><span></span><code><span id="__spand-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><a href="#__codelineno-0-1"><span class="linenos" data-linenos="1 "></span></a><span class="kr">fun</span> <span class="nf">f_identity</span> <span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="p">=</span> <span class="n">a</span>
-</span></code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="language-scala highlight"><span class="filename">identity_function.scala</span><pre><span></span><code><span id="__spand-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><a href="#__codelineno-1-1"><span class="linenos" data-linenos="1 "></span></a><span class="k">def</span><span class="w"> </span><span class="nf">f_identity</span><span class="w"> </span><span class="p">[</span><span class="nc">B</span><span class="p">]</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">B</span><span class="p">)</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="nc">B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span>
-</span></code></pre></div>
-</div>
-</div>
-</div>
+<figure>
+<p><img alt="type-suggestion" src="assets/images/infer_exp_empty.png" title="The operator block term type is any" /></p>
+<figcaption>
+<p>Fig. 2: The operator block term type is any</p>
+</figcaption>
+</figure>
+<p>When the operator block is complete, it will implicitly infer the term type. For example, the variable block term type on Fig. 3 is inferred from the <code>ASCII to Character block</code> term type, and the operator block term type on Fig. 4 is inferred from the second inhabitant of <code>the tuple constructor block</code>.</p>
+<figure>
+<p><img alt="type-suggestion" src="assets/images/infer_var_binding.png" title="Infer the term type form operator" /></p>
+<figcaption>
+<p>Fig. 3: Infer the term type form operator</p>
+</figcaption>
+</figure>
+<figure>
+<p><img alt="type-suggestion" src="assets/images/infer_exp_binding.png" title="The operator block term type is number" /></p>
+<figcaption>
+<p>Fig. 4: The operator block term type is <code>number</code></p>
+</figcaption>
+</figure>
 
 
 

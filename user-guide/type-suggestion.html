@@ -6,31 +6,31 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Macaca Nigra Programming Language">
+        <meta name="description" content="MNL is a Block-based Functional Programming Language">
       
       
-        <meta name="author" content="MnL">
+        <meta name="author" content="MNL">
       
       
         <link rel="canonical" href="https://macacanigra-pl.github.io/macacanigra-pl/user-guide/type-suggestion.html">
       
       
-        <link rel="prev" href="getting-started.html">
+        <link rel="prev" href="type-inference.html">
       
       
         <link rel="next" href="compiler.html">
       
       
       <link rel="icon" href="../assets/images/mnl_logo_1.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>Type Suggestion - Macaca Nigra Language</title>
+        <title>Type Suggestion - Macaca Nigra Programming Language</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -128,11 +128,39 @@
       
     
     
+      <link rel="stylesheet" href="../assets/css/extra-color.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Type Suggestion - Macaca Nigra Programming Language" >
+      
+        <meta  property="og:description"  content="MNL is a Block-based Functional Programming Language" >
+      
+        <meta  property="og:image"  content="https://macacanigra-pl.github.io/macacanigra-pl/assets/images/social/user-guide/type-suggestion.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://macacanigra-pl.github.io/macacanigra-pl/user-guide/type-suggestion.html" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Type Suggestion - Macaca Nigra Programming Language" >
+      
+        <meta  name="twitter:description"  content="MNL is a Block-based Functional Programming Language" >
+      
+        <meta  name="twitter:image"  content="https://macacanigra-pl.github.io/macacanigra-pl/assets/images/social/user-guide/type-suggestion.png" >
+      
     
     
   </head>
@@ -170,7 +198,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="https://macacanigra-pl.github.io/mnl/" title="Macaca Nigra Language" class="md-header__button md-logo" aria-label="Macaca Nigra Language" data-md-component="logo">
+    <a href="https://macacanigra-pl.github.io/mnl/" title="Macaca Nigra Programming Language" class="md-header__button md-logo" aria-label="Macaca Nigra Programming Language" data-md-component="logo">
       
   <img src="../assets/images/mnl_logo_1.svg" alt="logo">
 
@@ -183,7 +211,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Macaca Nigra Language
+            Macaca Nigra Programming Language
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -372,25 +400,6 @@
   
 
       
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="https://google.com" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Survey
-
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -419,12 +428,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://macacanigra-pl.github.io/mnl/" title="Macaca Nigra Language" class="md-nav__button md-logo" aria-label="Macaca Nigra Language" data-md-component="logo">
+    <a href="https://macacanigra-pl.github.io/mnl/" title="Macaca Nigra Programming Language" class="md-nav__button md-logo" aria-label="Macaca Nigra Programming Language" data-md-component="logo">
       
   <img src="../assets/images/mnl_logo_1.svg" alt="logo">
 
     </a>
-    Macaca Nigra Language
+    Macaca Nigra Programming Language
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -535,6 +544,29 @@
   
   <span class="md-ellipsis">
     Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="type-inference.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Type Inference
     
   </span>
   
@@ -790,28 +822,6 @@
   
 
     
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="https://google.com" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Survey
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -847,8 +857,8 @@
 
 
 <h1 id="type-suggestion">Type Suggestion<a class="headerlink" href="#type-suggestion" title="Permanent link">&para;</a></h1>
-<p>One of the MNL capability is type suggestion. MNL will show the suggestion type by coloring the rounded-box near to the input notch.</p>
-<p>Initially, MNL will color the suggestion box with any type color (dark silver), or when the type is fixed, then the color is based on it.</p>
+<p>One of MNL's capabilities is type suggestion. MNL will show the suggestion type by coloring the rounded box near the input notch.</p>
+<p>Initially, MNL will color the suggestion box with the color of the term type <code>any</code> (dark silver), but when the term type is successfully inferred, the color will change accordingly.</p>
 <figure>
 <p><img alt="type-suggestion" src="assets/images/type_suggestion_1.png" title="The incomplete block" /></p>
 <figcaption>
@@ -856,10 +866,10 @@
 </figcaption>
 </figure>
 <div class="annotate">
-<p>However, when the block has some attached input (The partially completed block (1) ), MNL will construct the type based on the type constraint rule and update the suggestion box color. The example below shows the color of suggestion box on the input notch.</p>
+<p>However, when the block has some attached input (The partially completed block (1) ), MNL will construct the type based on the type constraint rule and update the suggestion box color. The example below shows the color of the suggestion box on the input notch.</p>
 </div>
 <ol>
-<li><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> The partially completed block is a block with some attached input blocks, but not all input notches have connected with the input block.</li>
+<li><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> The partially completed block has a block with some attached input blocks, but not all input notches have connected with the input block.</li>
 </ol>
 <figure>
 <p><img alt="type-suggestion" src="assets/images/type_suggestion_2.png" title="The partially completed block" /></p>
@@ -872,10 +882,10 @@
 </figcaption>
 </figure>
 <div class="annotate">
-<p>When the block is complete, user can check whether the input block complies with the typing rule. For example, the completed block below, the input block attached to the otherwise input, does not comply with the typing rule. The typing rule required the block with the green color (2), but found the block with the yellow color (3).</p>
+<p>Users can check whether the input block complies with the typing rule when it is complete. For example, the completed block below, the input block attached to the otherwise input, does not comply with the typing rule. The typing rule required the block with the green color (2), but it found the block with the yellow color (3).</p>
 </div>
 <ol>
-<li><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> The completed block is a block with all input notches have connected to the input block.</li>
+<li><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> The completed block is a block with all input notches connected to the input block.</li>
 <li><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> The green color is the color for the type string.</li>
 <li><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> The yellow color is the color for the type number.</li>
 </ol>
@@ -885,7 +895,7 @@
 <p>Fig. 3: The completed block</p>
 </figcaption>
 </figure>
-<p>When the type constraint builder can't find the type from the attached input block but the block has parent block, it will infer the type from the parent block.</p>
+<p>When the type constraint builder cannot find the type from the attached input block, but the block has a parent block, it will infer the type from the parent block.</p>
 <figure>
 <p><img alt="type-suggestion" src="assets/images/type_suggestion_5.png" title="Infer from the parent block" /></p>
 <figcaption></figcaption>
@@ -893,14 +903,14 @@
 <figure>
 <p><img alt="type-suggestion" src="assets/images/type_suggestion_7.png" title="Infer from the parent block" /></p>
 <figcaption>
-<p>Fig 4: Infer from the parent block</p>
+<p>Fig. 4: Infer from the parent block</p>
 </figcaption>
 </figure>
 <p>The type constraint builder tries to infer the type from the attached input block first, then the parent block. </p>
 <figure>
-<p><img alt="type-suggestion" src="assets/images/type_suggestion_6.png" title="From the attached block, then the parent block" /></p>
+<p><img alt="type-suggestion" src="assets/images/type_suggestion_6.png" title="Start from the attached block, then the parent block" /></p>
 <figcaption>
-<p>Fig. 5: From the attached block, then the parent block</p>
+<p>Fig. 5: Start from the attached block, then the parent block</p>
 </figcaption>
 </figure>
 
@@ -909,6 +919,9 @@
 
 
 
+
+  
+  
 
 
 
@@ -960,10 +973,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.tracking", "navigation.prune", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.copy", "content.code.select", "content.code.annotate", "content.tooltips"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": {"CSS": "css", "HTML5": "html", "JavaScript": "js"}, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.top", "navigation.instant", "navigation.instant.progress", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.tracking", "navigation.prune", "search.suggest", "search.highlight", "search.share", "content.tabs.link", "content.code.copy", "content.code.select", "content.code.annotate", "content.tooltips"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": {"CSS": "css", "HTML5": "html", "JavaScript": "js"}, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
